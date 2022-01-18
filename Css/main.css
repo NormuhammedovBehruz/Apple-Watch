@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Global */
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -9,7 +17,12 @@ html {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -42,13 +55,19 @@ body {
 }
 
 .site-header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 /* Sitenav */
 
 .sitenav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin: 0;
@@ -97,6 +116,8 @@ body {
 /* Main */
 
 .main-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
@@ -105,12 +126,17 @@ body {
 }
 
 .hero-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .hero-content {
     padding-top: 100px;
+    padding-right: 330px;
 }
 
 .hero-header {
@@ -148,6 +174,8 @@ body {
     line-height: 27px;
     font-size: 18px;
     border: 2px solid transparent;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 
@@ -178,6 +206,8 @@ body {
 }
 
 .frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     list-style: none;
@@ -257,7 +287,11 @@ body {
 /* Section */
 
 .hero-content-containerr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 70px;
 }
@@ -311,7 +345,8 @@ body {
     background-image: url("../images/runners\ 1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .site-footer-content {
@@ -351,6 +386,8 @@ body {
     line-height: 27px;
     font-size: 18px;
     border: 2px solid transparent;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 
@@ -369,11 +406,3 @@ body {
 .button-dangerr:active {
     opacity: 0.6;
 }
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
