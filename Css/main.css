@@ -217,6 +217,10 @@ body {
     margin-right: 60px;
 }
 
+.produt a {
+    text-decoration: none;
+}
+
 .our-product {
     width: 280px;
     height: 27px;
